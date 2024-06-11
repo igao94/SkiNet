@@ -19,11 +19,6 @@ namespace Core.Specifications
 
         public bool IsPagingEnabled { get; private set; }
 
-        public BaseSpecification()
-        {
-
-        }
-
         public BaseSpecification(Expression<Func<T, bool>> criteria)
         {
             Criteria = criteria;
